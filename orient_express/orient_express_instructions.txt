@@ -1,0 +1,14 @@
+THE GAME
+
+The Orient Express places you aboard that famous train bound from London, England to Constantinople in February 1923. As a secret agent your assignment is to make contact with an arms dealer who has tired of his life of crime, and arrest the killer of one of his former associates.
+
+Some of the passengers on the train (all of whom are historical characters who actually rode the Express in their day) have information that can help you complete your assignment. As you work your way through the mystery, you participate in many of the things (delicious meals, stops at stations along the way, and occasional delays due to snow, derailment, and bandits) that made the Orient Express an unforgettable experience for those who rode it.
+
+Solving the puzzle is not easy. You will probably want to make notes about meaningful clues and take some time to think—hours perhaps—before talking to the Turkish police (who will help you) at Uzunkopru. Bear the following in mind as you play the game:
+
+You must identify and protect the sender of the note and identify and arrest the killer of Baron Wunster.
+Five notorious arms dealers, all of different nationalities, are currently operating in Europe under an uneasy truce. Each of them deals in a different type of weapon, and all are known to have different tastes and habits.
+Not all of the passengers with whom you speak have useful information. You cannot talk to passengers during sleeping segments of the trip.
+Unless you have extraordinary deductive powers, it will probably take you at least an hour of play to solve the mystery. (Of course, you can cheat and do some sleuthing in the program listing, but that will probably take you almost as long and be a lot less fun.)
+So grab your notebook and your ticket, and start asking questions. Remember, a man's life is at stake!
+

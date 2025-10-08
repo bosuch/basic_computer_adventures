@@ -1,0 +1,13 @@
+THE GAME
+
+In Voyage to Neptune, you are in command of the first manned spaceship journeying from Earth to Neptune. The year is 2100, and manned space stations have been established at roughly 500-million-mile intervals along your route. These stations are at Jupiter (orbiting Callisto), Saturn (orbiting Titan), Uranus (on Ariel), and at several points midway between Saturn and Uranus, and Uranus and Neptune.
+
+Navigation of your spacecraft is highly computerized, and you have a competent personnel officer on board to handle the inevitable people problems that will arise during a six-year journey. Your primary function as captain, therefore, is to maintain the delicate balance that will provide your ship with enough energy to reach its destination and return to Earth.
+
+The following hints will help to speed you on your way:
+
+Your spaceship uses both solar energy and nuclear fuel. Because you cannot carry enough nuclear fuel for the entire trip, you also have on board a multi-celled breeder reactor, which takes the spent fuel from the propulsion engines along with a small amount of primary fuel and turns it—somewhat inefficiently—back into primary fuel for propulsion. You must decide how much fuel to use for propulsion and how many breeder reactor cells to operate on each leg of the trip.
+At each space station along the way, you may trade nuclear fuel for breeder-reactor cells and vice versa. You may not trade more fuel than you have; nor may you trade so many cells that your breeder reactor ceases to function.
+You may have problems with your engines along the way, but there is little you can do to lessen this possibility. Likewise, if you are unlucky, some of your fuel may decay.
+If all goes well and you make judicious use of your resources, you can reach Neptune in just under six years with plenty of fuel left for your return voyage. Can you do it the first time or will you need a few trial runs?
+

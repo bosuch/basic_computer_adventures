@@ -1,0 +1,15 @@
+THE GAME
+
+In Subway Scavenger, you are a messenger hired to pick up and deliver packages all over New York City. Starting at 9:00 A.M., your log will show five deliveries and five pickups. You start from your office in the Port Authority Bus Terminal at 8th Avenue and 42nd Street and work until quitting time. During the course of your day, you face typical New York subway hazards—stuck doors, track fires, and unsavory characters—but the clock is your biggest enemy. The following rules govern your progress through your delivery schedule:
+
+When you arrive at a station on foot, you are told which trains stop at that station. You buy a token for $1 and board whichever train you wish.
+At each station, you can either get off or stay on. If you get off, you can then take another train (if the station is an interchange point) or make a delivery or pickup (if the station is within walking distance of your destination). Remember that express trains don't stop at all stations. The following clues should help non-New Yorkers:
+» Brooklyn Academy of Music is abbreviated BAM.
+» Rockaway Boulevard in Woodhaven (Queens) is on the A Train line.
+» Harlem is serviced by the A, B, and D Lines.
+» The World Trade Center is an easy walk from Chambers Street.
+» The New York Stock Exchange is an easy walk from Wall Street.
+» Grand Street and Canal Street run through Chinatown.
+The game is easier if you make a map as you go along.
+By the time you complete a few games of Subway Scavenger, you will feel like a native New Yorker—and probably be qualified for a high-paying job as a subway courier. Write if you get work!
+

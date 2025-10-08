@@ -1,0 +1,14 @@
+THE GAME
+
+The Longest Automobile Race puts you in the driver's seat. In this simulation of a 1908 race from New York to Paris—across the U.S., Japan, Russia, and Europe—you are the captain of the American team. It is your job to get the Thomas Flyer to Paris as quickly as possible—and before your money runs out.
+
+Soon after your departure on February 12, 1908, you encounter some of the worst snows of the decade. From Chicago on, you face a different array of problems: accidents, fatigue, mechanical breakdowns, and more bad weather. Japan and Russia have their own problems (narrow cart tracks in Japan, no gas or lubricants in Russia).
+
+Your chances of beating the other contestants to Paris will be increased if you note the following:
+
+Buy as much gas as you need, but no more. Prices are high between stops, and any gas remaining at the end of a segment goes to waste. Your car gets approximately 14 miles per gallon, but with changing terrain your mileage could vary by 20%.
+At speeds in excess of 35 mph, the probability of mechanical breakdown increases dramatically. Likewise, driving more than six and a half hours per day increases your chances of having an accident.
+If you get stuck in a snowdrift, a ditch, or mud, you can either pay someone to pull you out or try to extricate yourself. The former costs you money; the latter, time.
+You can choose whether to repair a mechanical problem on the spot or nurse the car along to the next city. On-the-spot repairs are generally more costly, but a second malfunction on top of the first forces you to retire from the race.
+On July 30, 1908, nearly six months after starting the race, the weary Thomas Flyer crew limped down the Champs-Elysees and was declared the winner of the race. Can you improve on the performance of the American team—or will your opponents pass as you are permanently bogged down in Siberian mud?
+

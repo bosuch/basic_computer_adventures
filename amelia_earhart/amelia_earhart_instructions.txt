@@ -1,0 +1,14 @@
+THE GAME
+
+In this simulation of Amelia Earhart's around-the-world flight attempt, you take the place of the most famous aviatrix of all time. Flying in the cockpit of a twin-engine Lockheed Electra, you face the same decisions and hazards Amelia Earhart faced in 1937.
+
+Prior to each flight, you are given information about your physical condition, the distance to the next destination, and the current weather. Once aloft, you may encounter a variety of problems: headwinds, heavy rain, engine malfunctions, excessive fuel consumption, and navigation difficulties.
+
+Of course, your skill as an aviator is unquestioned, but to increase your chances of survival, remember the following:
+
+To find out the condition of the field before each landing, you attempt to contact someone on the ground—sometimes successfully, sometimes not. Should the runway be excessively muddy, you have the option to turn back.
+In case of a malfunction, you are asked if you want to make repairs, which, of course, take time. Not making repairs, however, substantially increases the probability of a major problem in the future.
+Similarly, your engines and other mechanical components will last longer if they are maintained judiciously. Flying for more than 40 hours between engine overhauls dramatically increases the probability of malfunction.
+You must balance the relationship between fuel consumption and weight. At 150 mph, the Electra gets approximately two miles per gallon. Bad weather increases fuel consumption.
+As she left New Guinea for Howland Island, Amelia Earhart flew under some of the worst conditions of the trip—as you will discover—and she had to turn back for the Gilbert Islands, a decision that ultimately led to her death. Can you learn from her mistakes and make it to Howland, Hawaii, and finally back to Oakland?
+

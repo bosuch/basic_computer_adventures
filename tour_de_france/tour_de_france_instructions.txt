@@ -1,0 +1,21 @@
+THE GAME
+
+In Tour de France, you are a bicycle racer whose objective is to win the famous three-week bicycle road race around France. The competition is fierce in this most grueling of all races: You must overcome physical pain, mechanical difficulties, rough terrain, and other problems.
+
+Prior to the race, you are asked some questions about your physical condition and training. You are also given a chance to pedal your bicycle on a short practice run. To "pedal" your bicycle, strike two keys alternately on your keyboard. You can use the index finger of each hand or the index and middle finger of one hand. A well-practiced rider in excellent condition can pedal a bicycle at about 80 rpm.
+
+Your bicycle is a 12-speed with ring gears (pedal) of 52 and 40 teeth, and cog gears (back wheel) of 13, 15, 17, 19, 21, 23, and 25 teeth. (See Table 1.) In your highest gear, 52/13, you will travel 8.61 meters for each pedal revolution, while in your lowest gear, 40/25, you will travel 3.45 meters. Your high gears are best for the flat, open road, while your low gears are necessary for climbing the steep mountains.
+
+Cog Gear	13	15	17	19	21	23	25
+Ring Gear
+52	8.61	7.45	6.59	5.88	5.32	4.87
+40		5.75	5.06	4.55	4.09	3.75	3.45
+TABLE 1. Meters progressed for ring/cog combinations
+
+Here are a few tips to help you place among the top finishers:
+
+Always use the highest gear possible for the terrain you encounter.
+You can have the computer do some of your pedaling, but it is an inconsistent performer, so you may be better off doing your own pedaling.
+There is a sprint at the end of each stage. The computer counts down the kilometers starting 10 km from the end of the stage. You must decide when to start your sprint. Start too soon and you may tire before you reach the finish line; start too late and you will not gain much time.
+The Tour de France is probably the toughest athletic contest in the world One quarter of the starters never finish the race. But the others—despite collisions, concussions, gashes, and even broken bones—continue to compete, for simply to finish the Tour is a feat any cyclist can be proud of.
+

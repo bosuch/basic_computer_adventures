@@ -1,0 +1,28 @@
+THE STORY
+
+Although fictional accounts of space voyages date back to the 1500s, the first serious rocket motor for space flight was not devised until the twentieth century. In 1903, K.E. Tsiolkovsky, a Russian pioneer of astronautics, proposed using a liquid-propelled rocket motor for space flight. The first rocket to employ an engine of this type was fired by Robert H. Goddard in the United States in 1926.
+
+In Germany during World War II, Werner von Braun developed the V2 weapon, the first long-range liquid-fuel rocket. After the war, von Braun and most of the other German rocket specialists went to the United States, where they were instrumental in the development of rockets for satellite launches and space exploration.
+
+Russia was also working on rockets and space vehicles and, on October 4, 1957, launched Sputnik I, the event that marked the real beginning of the space age. Other Soviet satellites followed and in 1958 the United States launched its first satellite, Explorer I, which provided the first information about the Van Allen radiation belts that surround the Earth.
+
+In January 1959, the Soviet satellite Luna I was the first successful lunar probe, bypassing the moon at 3728 miles. A year later another Soviet satellite was the first to circle the moon. On April 12, 1961, the USSR launched the first manned spacecraft, Vostok I, with Yuri Gagarin aboard. The flight made one complete circuit of the Earth at a height ranging from 112 to 187 miles, and lasted one hour and 29 minutes. Three weeks later on May 5, Alan Shepard became the first American space traveler, making a short 15-minute suborbital "hop" in a Mercury vehicle.
+
+In the 1960s, the U.S. undertook a major program to put a man on the moon. Milestones in this project included docking maneuvers between Gemini spacecraft in December 1965; the first manned flight around the moon by Frank Borman, James Lovell, and William Anders in December 1968; and finally, the lunar landing by Neil Armstrong and Edwin Aldrin on July 20, 1969.
+
+Space stations have had a somewhat controversial history since they were first proposed by Tsiolkovsky in the 1920s. Stations are felt by some to be the most efficient method of launching deep space probes, because the probe vehicle will not have to overcome the force of Earth's gravity. Others feel that the cost of space stations cannot be justified in view of the marginal benefits.
+
+Skylab, the first and only American space station, was launched on May 14, 1973 and was manned by three successive crews for a period of 171 days. The Soviets have made a greater commitment to space stations and have launched several different types, which they have manned for periods exceeding one year.
+
+The spectacular success of the Voyager 1 and 2 probes to Jupiter, Saturn, Uranus, and Neptune indicates that the technology required to send spacecraft to the outer planets is in place.
+
+However, for manned planetary exploration, particularly beyond Mars, it seems that some system of manned or unmanned way stations will be necessary.
+
+This computer program, Voyage to Neptune, leaps ahead to a time when a series of manned space stations have been established on the route to the outer planets. We are assuming stations at roughly equal intervals of 400 to 500 million miles. They are at Jupiter (orbiting Callisto, the largest Jovian moon), Saturn (orbiting Titan, a moon larger than Mercury), Alpha 1 (midway between Saturn and Uranus). Uranus (on Ariel, the innermost moon), and Theta 2 (507 million miles beyond Uranus).
+
+The voyage itself is all fiction. Your spaceship has engines which can operate using both solar energy (captured by giant parabolic collecting arrays) and nuclear fuel. Because solar radiation diminishes as you get further from the sun and you will not be able to carry enough nuclear fuel for the entire trip, you also have a multi-celled nuclear breeder reactor which takes the spent fuel from the propulsion engines along with a small amount of primary fuel and turns it all back into primary fuel.
+
+The space stations along the way usually have a small stock of engine-repair parts (you also carry spare parts), breeder-reactor cells, and nuclear fuel, which are available to you on a barter basis.
+
+Your objective in the game is to make the 2700-million-mile trip to Neptune in six years or less. It is possible but far from easy. Bon voyage.
+
