@@ -318,9 +318,8 @@
 3180 RETURN
 3190 '
 3200 'Subroutine to print inventory
-3210 PRINT TAB(22) "Sacks of Skins of Robes and Balms and Crossbow"
-3220 PRINT "Jewels Camels Food Oil Sandals";
-3230 PRINT "Unguents Arrows" : GOSUB 3110
+3210 PRINT TAB(22) "Sacks of  Skins of  Robes and  Balms and  Crossbow"
+3220 PRINT "Jewels     Camels      Food       Oil     Sandals    Unguents    Arrows" : GOSUB 3110
 3240 PRINT USING "#####";JL; : X$ = "###########" : XA$ = "#########.#"
 3250 PRINT USING X$; B; : PRINT USING XA$; F; : PRINT USING XA$; L;
 3260 PRINT USING X$; C; : PRINT USING X$; M; : PRINT USING X$; W : PRINT : RETURN
