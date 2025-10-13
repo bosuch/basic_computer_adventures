@@ -12,10 +12,20 @@ def hit_continue(): #was 3720
     center_me("Press any key to continue:")
     input("")
     
+#TODO: This is recursive, need to test
 def check_range(): #was 3790
-3800 IF A >= A1 AND A <= A2 THEN RETURN
-3810 IF A < A1 THEN X$ = "few" ELSE X$ = "many"
-3820 PRINT "That is too" X$; : INPUT ". Your answer please"; A : GOTO 3800
+    if A >= A1 and A <= A2:
+        return
+    
+    if A < A1:
+        word = "few"
+    else:
+        word = "many"
+        
+    print(f"That is too {word}.")
+    A = input("Your answer please: ")
+    check_range()
+    
 
 clear_screen()
 
@@ -27,15 +37,13 @@ hit_continue()
 clear_screen()
 
 # Initial quantities of stuff
-jewels = 300 # JL
-clothes = 2 # C
-weapons = 30 # W
-medicine = 5 # M
-food_eaten_previous = 5 # FP
-beast_sickness = 99 #BSK
-
-#TODO: Figure out the best way to do this
-#140 DIM EP(20)
+#TODO: Change these to friendly names
+JL = 300 # jewels
+C = 2 # clothes
+W = 30 # weapons
+M = 5 # medicine
+FP = 5 # food_eaten_previous
+BSK = 99 # beast_sickness
 
 # Print the initial scenario
 center_me("The Journey of Marco Polo-1271")
@@ -68,7 +76,7 @@ print("some food in this way.")
 #3560 'Subroutine to read event probabilities
 #3570 FOR I = 1 TO 14 : READ A : EPT = EPT + A : EP(I) = EPT : NEXT I
 #3580 DATA 6, 4, 4, 6, 6, 6, 6, 4, 4, 1, 6, 8, 18, 10
-
+#TODO: Remember python is 0-based
 data = [6, 4, 4, 6, 6, 6, 6, 4, 4, 1, 6, 8, 18, 10]
 
 EP = [] #TODO: Change all instances to friendly name
@@ -84,6 +92,7 @@ print("EP =", EP)
 #3600 DATA "March", "May", "July", "September", "November", "January"
 
 #TODO: Can this be applied to the previous one?
+#TODO: Remember python is 0-based
 MO = ["March", "May", "July", "September", "November", "January"]
 print("MO =", MO)
 
@@ -101,25 +110,68 @@ print("")
 print(" After three months at sea, you have arrived at the seaport of")
 print("Laiassus, Armenia. There are many merchants in the port city and")
 print("you can easily get the supplies you need. Several traders offer you")
-760 A1 = 17 : A2 = 24 : PRINT "camels at prices between" A1 "and" A2 "jewels each."
-770 INPUT "How much do you want to pay for a camel";A : GOSUB 3790 : BA = A
+A1 = 17
+A2 = 24
+print(f"camels at prices between {A1} and {A2} jewels each.")
+A = input("How much do you want to pay for a camel? ")
+check_range()
+BA = A
 print("You will need at least 7 camels, but not more than 12.")
-790 A1 = 7 : A2 = 12 : INPUT "How many camels do you want to buy";A : GOSUB 3790
-800 B = A : JL = JL - BA * B : A2 = 3 * B - 6 : 'Camels—number, cost, amount they can carry
+A1 = 7
+A2 = 12
+A = input("How many camels do you want to buy? ")
+check_range()
+B = A
+JL = JL - BA * B
+A2 = 3 * B - 6
 print(" One large sack of food costs 2 jewels. You will need at least")
-print(f"8 sacks to get to Babylon (Baghdad); you can carry a maximum of {A2}")
-830 A1 = 8 : INPUT "sacks. How many do you want";A : GOSUB 3790
-840 F = A : JL = JL - A * 2 : A2 = 3 * B - A : 'Food & cost, amount of oil camels can carry
+print(f"8 sacks to get to Babylon (Baghdad); you can carry a maximum of {A2} sacks.")
+A1 = 8
+A = input("How many do you want? ")
+check_range()
+F = A
+JL = JL - A * 2
+A2 = 3 * B - A
 print(" A skin of oil costs 2 jewels each. You should have at least 6")
-print(f"full skins for cooking in the desert. Your camels can carry {A2}")
-870 A1 = 5 : INPUT "skins. How many do you want";A : GOSUB 3790
-880 BL = B : L = A : JL = JL - 2 * L : 'Oil-amount and cost : return
+print(f"full skins for cooking in the desert. Your camels can carry {A2} skins.")
+A1 = 5
+A = input("How many do you want? ")
+check_range()
+BL = B
+L = A
+JL = JL - 2 * L
 
-180 GOSUB 720 : 'Purchase initial supplies
-190 GOSUB 600 : 'Input hunting skill level
-195 X$ = "Press any key to begin your trek!" : GOSUB 3760 : GOSUB 3740 : PRINT
-200 '
-210 'Main program
+# Hunting skill level
+
+#TODO: Remember python is 0-based
+#610 S$(1) = "SPLAT" : S$(2) = "SPRONG" : S$(3) = "TWACK" : S$(4) = "ZUNK"
+S = ['SPLAT','SPRONG','TWACK','ZUNK']
+#620 FA$(1) = "wild boar" : FA$(2) = "big stag" : FA$(3) = "black bear"
+FA = ['wild boar','big stag','black bear']
+
+print('')
+print("Before you begin your journey, please rank your skill with")
+print("the crossbow on the following scale:")
+print(" (1) Can hit a charging boar at 300 paces")
+print(" (2) Can hit a deer at 50 paces")
+print(" (3) Can hit a sleeping woodchuck at 5 paces")
+print(" (4) Occasionally hit own foot when loading")
+HX = 0
+while HX > 1 and HX < 5:
+    HX = input("How do you rank yourself? ")
+    #TODO: How to exit if input is correct? Just an if statement?
+    print("Please enter 1, 2, 3, or 4")
+
+
+center_me("Press any key to begin your trek!")
+anykey = input('')
+print('')
+
+
+
+
+# Main program
+#TODO: Probably going to need to wrap this in a while statement
 220 J = J + 1 : GOSUB 3510 : 'Next two-month segment
 230 DT = DT + D : IF DT > 6000 THEN 3360 : 'Reached end of trip?
 240 D = 40 + BA * 20 + INT(100 * RND(1)) : PRINT "You have traveled" DT "miles."
@@ -136,20 +188,7 @@ print(f"full skins for cooking in the desert. Your camels can carry {A2}")
 340 GOSUB 3110 : GOTO 220
 350 '
 
-590 '
-600 'Subroutine to initialize hunting skill level
-610 S$(1) = "SPLAT" : S$(2) = "SPRONG" : S$(3) = "TWACK" : S$(4) = "ZUNK"
-620 FA$(1) = "wild boar" : FA$(2) = "big stag" : FA$(3) = "black bear"
-625 PRINT : PRINT "Before you begin your journey, please rank your skill with"
-630 PRINT "the crossbow on the following scale:"
-640 PRINT " (1) Can hit a charging boar at 300 paces"
-650 PRINT " (2) Can hit a deer at 50 paces"
-660 PRINT " (3) Can hit a sleeping woodchuck at 5 paces"
-670 PRINT " (4) Occasionally hit own foot when loading"
-680 INPUT "How do you rank yourself";HX
-690 IF HX > 1 AND HX < 5 THEN PRINT : RETURN
-700 PRINT "Please enter 1, 2, 3, or 4" : GOTO 680
-710 '
+
 
 900 '
 910 'Subroutine to check for being out of jewels and clothes
