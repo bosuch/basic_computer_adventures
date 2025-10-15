@@ -26,6 +26,61 @@ def check_range(): #was 3790
     A = input("Your answer please: ")
     check_range()
     
+def print_date():
+    MO = J
+    while MO > 6:
+        MO = MO - 6
+    YR = 1271 + INT(J / 6)
+    print('')
+    print(f"Date : {MO_string[MO-1]}, {YR}")
+    
+def print_inventory(): # Was 3200
+    print(" " * 22 + "Sacks of  Skins of  Robes and  Balms and  Crossbow")
+    print("Jewels     Camels      Food       Oil     Sandals    Unguents    Arrows")
+    check_zero_quantity()
+    #TODO: What's the equivalent of PRINT USING?
+    #3240 PRINT USING "#####";JL; : X$ = "###########" : XA$ = "#########.#"
+    #3250 PRINT USING X$; B; : PRINT USING XA$; F; : PRINT USING XA$; L;
+    #3260 PRINT USING X$; C; : PRINT USING X$; M; : PRINT USING X$; W : PRINT : RETURN
+
+def check_zero_quantity(): # Was 3110
+    if JL < 0:
+        JL = 0 #Can't have negative jewels
+    if F < 0:
+        F = 0 #or food
+    if L < 0:
+        L = 0 #or oil
+    if C < 0:
+        C = 0 #or clothing
+    if M < 0:
+        M = 0 #or medicine
+    if W < 0:
+        W = 0 #or arrows
+        
+def check_sickness():
+     if PSK > 0: #Sickness total
+        PSKT = PSKT + PSK
+        PSK = 0
+    if PWD > 0: #Injuries total
+        PWDT = PWDT + PWD
+        PWD = 0
+    if FE = 3:
+        PFD = PFD + .4
+    if PSKT + PWDT + PFD < 3:
+        return 
+    if RND(1) > .7 THEN RETURN : '70% chance of delay due to recurring illness
+    print"As a result of sickness, injuries, and poor eating, you must stop")
+    print("and regain your health. You trade a few jewels to stay in a hut.")
+    RN = INT(1 + 3.2 * RND(1))
+    : IF RN > 3 THEN 1160 : '6% chance of dying
+1110 PRINT "You grow steadily stronger, but it is" RN * 2 "months until you"
+1120 PRINT "are again fit to travel." : PSKT = 0 : PWDT = 0 : PFD = 0 : J = J + RN
+1130 M = INT(M / 2) : F = F / 2 : IF F < 3 THEN F = 3
+1140 IF JL > 20 THEN JL = JL - 10 ELSE JL = INT(JL / 2) : 'Costs money for lodging
+1150 GOSUB 3510 : RETURN
+1160 FOR I = 1 TO 2500 : NEXT : PRINT "You stay for" RN "months but grow"
+1170 PRINT "steadily weaker and finally pass away." : J = J + RN : GOTO 3320
+1180 '
 
 clear_screen()
 
@@ -93,7 +148,7 @@ print("EP =", EP)
 
 #TODO: Can this be applied to the previous one?
 #TODO: Remember python is 0-based
-MO = ["March", "May", "July", "September", "November", "January"]
+MO_string = ["March", "May", "July", "September", "November", "January"]
 print("MO =", MO)
 
 
@@ -172,10 +227,14 @@ print('')
 
 # Main program
 #TODO: Probably going to need to wrap this in a while statement
-220 J = J + 1 : GOSUB 3510 : 'Next two-month segment
-230 DT = DT + D : IF DT > 6000 THEN 3360 : 'Reached end of trip?
-240 D = 40 + BA * 20 + INT(100 * RND(1)) : PRINT "You have traveled" DT "miles."
-245 PRINT "Here is what you now have :" : GOSUB 3200
+J = J + 1
+print_date()
+DT = DT + D
+IF DT > 6000 THEN 3360 #TODO: Break out of loop with win condition
+D = 40 + BA * 20 + INT(100 * RND(1)) #TODO: Random
+print(f"You have traveled {DT } miles.")
+print("Here is what you now have :")
+print_inventory()
 250 GOSUB 910 : 'Check for no jewels or clothes
 260 GOSUB 1020 : 'Check for sickness
 270 IF BSK = J THEN BSK = 99 : BL = B : BA = BA + 1 : 'Camel recover yet?
@@ -203,23 +262,7 @@ print('')
 990 PRINT "You should try to replace that tent you have been wearing as a"
 1000 PRINT "robe. It is badly torn and the Tartars find it insulting." : RETURN
 1010 '
-1020 'Subroutine to deal with sickness
-1030 IF PSK > 0 THEN PSKT = PSKT + PSK : PSK = 0 : 'Sickness total
-1040 IF PWD > 0 THEN PWDT = PWDT + PWD : PWD = 0 : 'Injuries total
-1050 IF FE = 3 THEN PFD = PFD + .4
-1060 IF PSKT + PWDT + PFD < 3 THEN RETURN
-1070 IF RND(1) > .7 THEN RETURN : '70% chance of delay due to recurring illness
-1080 PRINT "As a result of sickness, injuries, and poor eating, you must stop"
-1090 PRINT "and regain your health. You trade a few jewels to stay in a hut."
-1100 RN = INT(1 + 3.2 * RND(1)) : IF RN > 3 THEN 1160 : '6% chance of dying
-1110 PRINT "You grow steadily stronger, but it is" RN * 2 "months until you"
-1120 PRINT "are again fit to travel." : PSKT = 0 : PWDT = 0 : PFD = 0 : J = J + RN
-1130 M = INT(M / 2) : F = F / 2 : IF F < 3 THEN F = 3
-1140 IF JL > 20 THEN JL = JL - 10 ELSE JL = INT(JL / 2) : 'Costs money for lodging
-1150 GOSUB 3510 : RETURN
-1160 FOR I = 1 TO 2500 : NEXT : PRINT "You stay for" RN "months but grow"
-1170 PRINT "steadily weaker and finally pass away." : J = J + RN : GOTO 3320
-1180 '
+
 1190 'Subroutine to barter for supplies
 1200 PRINT "You have" JL; : INPUT "jewels. Do you want to barter here";A$
 1210 GOSUB 3840 : IF A$ = "N" THEN 1380
@@ -417,22 +460,7 @@ print('')
 3080 PRINT "With shooting that good, the Khan will want you in his army." : FA = 3
 3090 PRINT "Your hunting yields" FA "sacks of food." : F = F + FA : RETURN
 3100 '
-3110 'Subroutine to check for zero quantities
-3120 IF JL < 0 THEN JL = 0 : 'Can't have negative jewels
-3130 IF F < 0 THEN F = 0 : 'or food
-3140 IF L < 0 THEN L = 0 : 'or oil
-3150 IF C < 0 THEN C = 0 : 'or clothing
-3160 IF M < 0 THEN M = 0 : 'or medicine
-3170 IF W < 0 THEN W = 0 : 'or arrows
-3180 RETURN
-3190 '
-3200 'Subroutine to print inventory
-3210 PRINT TAB(22) "Sacks of  Skins of  Robes and  Balms and  Crossbow"
-3220 PRINT "Jewels     Camels      Food       Oil     Sandals    Unguents    Arrows" : GOSUB 3110
-3240 PRINT USING "#####";JL; : X$ = "###########" : XA$ = "#########.#"
-3250 PRINT USING X$; B; : PRINT USING XA$; F; : PRINT USING XA$; L;
-3260 PRINT USING X$; C; : PRINT USING X$; M; : PRINT USING X$; W : PRINT : RETURN
-3270 '
+
 3280 'End game - out of food
 3290 PRINT "You keep going as long as you can, trying to find berries and"
 3300 PRINT "edible plants. But this is barren country and you fall ill and,"
@@ -457,11 +485,7 @@ print('')
 3490 PRINT : INPUT "Would you like to try again";A$ : GOSUB 3840
 3500 IF A$ = "Y" THEN RUN ELSE CLS : KEY ON : PRINT "Bye for now." : END
 3505 '
-3510 'Subroutine to print the date
-3520 MO = J : WHILE MO > 6 : MO = MO - 6 : WEND
-3530 YR = 1271 + INT(J / 6)
-3540 PRINT : PRINT "Date :" MO$(MO) YR : RETURN
-3550 '
+
 
 3610 '
 3620 'Subroutine to shoot crossbow
